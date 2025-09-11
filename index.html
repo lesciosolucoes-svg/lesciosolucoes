@@ -1,0 +1,57 @@
+New Chat
+
+History
+
+Image To App
+
+Agents
+
+BLACKBOX IDE
+
+API Platform
+
+Docs
+
+Web IDE
+
+Partnership
+
+Careers
+
+Log Out
+Joao Lescio
+Joao Lescio
+joao.lescioo@gmail.com
+
+
+
+
+55 lines
+
+import React, { useState } from "react";
+import { Mail, Phone, MapPin, Clock, Shield, Scale, Home, Users, FileText, MessageCircle } from "lucide-react";
+const LescioSolucoes = () => {
+  const [formData, setFormData] = useState({
+    nome: "",
+    email: "",
+    telefone: "",
+    mensagem: "",
+    servico: "financeiro"
+  });
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Aqui seria a lógica para enviar o formulário
+    alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+    setFormData({
+      nome: "",
+      email: "",
+      telefone: "",
+      mensagem: "",
+      servico: "financeiro"
