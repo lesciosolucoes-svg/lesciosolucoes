@@ -59,6 +59,11 @@
       letter-spacing: 1px;
     }
 
+    header .header-right {
+      display: flex;
+      align-items: center;
+    }
+
     nav a {
       color: #fff;
       margin-left: 20px;
@@ -68,6 +73,21 @@
 
     nav a:hover {
       color: #f4f4f4;
+    }
+
+    .sobre-btn {
+      background-color: #fca311;
+      color: #fff;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      margin-left: 20px;
+    }
+
+    .sobre-btn:hover {
+      background-color: #e69500;
     }
 
     /* HERO */
@@ -212,8 +232,17 @@
         text-align: center;
       }
 
+      header .header-right {
+        flex-direction: column;
+      }
+
       nav a {
         margin: 10px 5px;
+      }
+
+      .sobre-btn {
+        margin-left: 0;
+        margin-top: 10px;
       }
 
       .hero h2 {
@@ -231,11 +260,14 @@
   <!-- HEADER -->
   <header>
     <h1>Lescio Soluções Financeiras e Jurídicas</h1>
-    <nav aria-label="Menu principal">
-      <a href="#home">Início</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <div class="header-right">
+      <nav aria-label="Menu principal">
+        <a href="#home">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a href="sobre.html" class="sobre-btn">Sobre Nós</a>
+    </div>
   </header>
 
   <!-- HERO -->
@@ -288,6 +320,7 @@
   <footer>
     <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas - Todos os direitos reservados</p>
     <p>📍 Rua Nestor, 845 - Santa Cruz</p>
+  </footer>
 
 </body>
 </html>
