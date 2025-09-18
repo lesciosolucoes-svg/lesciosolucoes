@@ -4,26 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Nós - Lescio Soluções</title>
-  <meta name="description" content="Conheça a equipe e a missão da Lescio Soluções Financeiras e Jurídicas.">
-  <meta name="author" content="Lescio Soluções Financeiras e Jurídicas">
+  <meta name="description" content="Conheça a equipe da Lescio Soluções Financeiras e Jurídicas: fundador e advogadas especializadas em assessoria jurídica e financeira.">
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f9f9f9;
       color: #333;
       line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
     }
 
     header {
@@ -40,73 +34,63 @@
 
     header h1 {
       font-size: 1.8rem;
+      letter-spacing: 1px;
     }
 
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #f4f4f4;
-    }
-
-    .sobre-hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                  url('https://lh3.googleusercontent.com/p/AF1QipMmjd43q_dUFYJga_bbB2CZaRgl25eG4AX0cHHW=s1360-w1360-h1020-rw') no-repeat center/cover;
-      color: #fff;
-      height: 50vh;
+    .nav-buttons {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
+      gap: 15px;
     }
 
-    .sobre-hero h2 {
-      font-size: 2.8rem;
-      font-weight: 700;
+    .nav-buttons a {
       color: #fff;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
     }
 
-    .sobre-section {
-      padding: 60px 5%;
-      background: #fff;
+    .nav-buttons a:hover {
+      background-color: #fca311;
+      color: #000;
+    }
+
+    .content {
       max-width: 900px;
-      margin: auto;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
     }
 
-    .sobre-section h3 {
-      font-size: 2rem;
+    .content h2 {
+      font-size: 2.5rem;
       margin-bottom: 20px;
-      color: #222;
+      color: #1c1c1c;
     }
 
-    .sobre-section p {
-      font-size: 1.1rem;
+    .fundador, .advogadas {
+      margin-top: 40px;
+    }
+
+    .fundador h4, .advogadas h4 {
+      font-size: 1.5rem;
       margin-bottom: 15px;
+      color: #0d1b2a;
     }
 
-    .sobre-section ul {
-      list-style-type: none;
-      padding-left: 0;
+    .foto-fundador img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 10px;
     }
 
-    .sobre-section ul li {
-      padding-left: 20px;
-      position: relative;
+    .advogadas p {
       margin-bottom: 10px;
-    }
-
-    .sobre-section ul li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #fca311;
-      font-weight: 700;
+      font-size: 1.1rem;
     }
 
     footer {
@@ -114,6 +98,7 @@
       color: #fff;
       text-align: center;
       padding: 20px;
+      margin-top: 50px;
       font-size: 0.9rem;
     }
 
@@ -121,23 +106,21 @@
       margin: 5px 0;
     }
 
-    footer a {
-      color: #fff;
-      text-decoration: underline;
-    }
-
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      nav a {
-        margin: 10px 5px;
-      }
-
-      .sobre-hero h2 {
+      .content h2 {
         font-size: 2rem;
+      }
+
+      .fundador h4, .advogadas h4 {
+        font-size: 1.3rem;
+      }
+
+      .nav-buttons {
+        flex-direction: column;
+      }
+
+      .nav-buttons a {
+        margin: 5px 0;
       }
     }
   </style>
@@ -146,30 +129,32 @@
 
   <!-- HEADER -->
   <header>
-    <h1>Lescio Soluções Financeiras e Jurídicas</h1>
-    <nav aria-label="Menu principal">
-      <a href="index.html">Início</a>
-      <a href="index.html#servicos">Serviços</a>
-      <a href="index.html#contato">Contato</a>
-    </nav>
+    <h1>Lescio Soluções</h1>
+    <div class="nav-buttons">
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre Nós</a>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section class="sobre-hero">
-    <h2>Sobre Nós</h2>
-  </section>
+  <!-- CONTEÚDO PRINCIPAL -->
+  <div class="content">
+    <h2>Conheça nossa equipe</h2>
 
-  <!-- CONTEÚDO -->
-  <section class="sobre-section">
-    <h3>Fundador</h3>
-    <p>João Lescio</p>
+    <!-- FUNDADOR -->
+    <div class="fundador">
+      <h4>Fundador: João Lescio</h4>
+      <div class="foto-fundador">
+        <img src="imagens/joao-lescio.jpg" alt="João Lescio">
+      </div>
+    </div>
 
-    <h3>Advogadas</h3>
-    <ul>
-      <li>DR.ª RAYANE ALVES PARREIRA - OAB/RJ 240.249</li>
-      <li>LORENA GOMES SANTANA DO NASCIMENTO - OAB/RJ 247.469</li>
-    </ul>
-  </section>
+    <!-- ADVOGADAS -->
+    <div class="advogadas">
+      <h4>Advogadas</h4>
+      <p>DR.ª RAYANE ALVES PARREIRA - OAB/RJ 240.249</p>
+      <p>LORENA GOMES SANTANA DO NASCIMENTO - OAB/RJ 247.469</p>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer>
