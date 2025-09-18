@@ -1,57 +1,78 @@
-New Chat
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lescio Soluções</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    main h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo à Lescio Soluções</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Serviços</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
 
-History
+  <main>
+    <h2>Soluções digitais para o seu negócio</h2>
+    <p>
+      Este é o site oficial da <strong>Lescio Soluções</strong>.  
+      Aqui você encontra tecnologia, inovação e suporte para transformar suas ideias em realidade.
+    </p>
+  </main>
 
-Image To App
-
-Agents
-
-BLACKBOX IDE
-
-API Platform
-
-Docs
-
-Web IDE
-
-Partnership
-
-Careers
-
-Log Out
-Joao Lescio
-Joao Lescio
-joao.lescioo@gmail.com
-
-
-
-
-55 lines
-
-import React, { useState } from "react";
-import { Mail, Phone, MapPin, Clock, Shield, Scale, Home, Users, FileText, MessageCircle } from "lucide-react";
-const LescioSolucoes = () => {
-  const [formData, setFormData] = useState({
-    nome: "",
-    email: "",
-    telefone: "",
-    mensagem: "",
-    servico: "financeiro"
-  });
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Aqui seria a lógica para enviar o formulário
-    alert("Mensagem enviada com sucesso! Entraremos em contato em breve.");
-    setFormData({
-      nome: "",
-      email: "",
-      telefone: "",
-      mensagem: "",
-      servico: "financeiro"
+  <footer>
+    <p>&copy; 2025 Lescio Soluções - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
