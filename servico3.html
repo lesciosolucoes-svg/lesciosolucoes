@@ -26,4 +26,62 @@ nav a:hover { color:#fca311; }
 .services p { margin-bottom:20px; font-size:1.1rem; }
 .services ul { list-style-type:none; margin-bottom:30px; }
 .services ul li { margin-bottom:10px; padding-left:20px; position:relative; font-weight:500; }
-.services ul li::before
+.services ul li::before { content:"✓"; position:absolute; left:0; color:#fca311; font-weight:700; }
+.button { display:inline-block; background-color:#fca311; color:#fff; padding:15px 30px; font-size:1.1rem; font-weight:600; border-radius:50px; text-decoration:none; transition:background-color 0.3s; }
+.button:hover { background-color:#e69500; }
+footer { background-color:#0d1b2a; color:#fff; text-align:center; padding:30px 20px; }
+footer p { margin-bottom:5px; font-size:0.95rem; }
+@media (max-width:768px) { .hero h2 { font-size:2.2rem; } .hero p { font-size:1rem; } nav a { margin-left:15px; } }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Lescio Soluções</h1>
+<nav aria-label="Menu principal">
+<a href="index.html">Início</a>
+<a href="servico1.html">Veicular</a>
+<a href="servico2.html">Imobiliário</a>
+<a href="servico3.html">Jurídica</a>
+<a href="servico4.html">Financeiro</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>Assessoria Jurídica</h2>
+<p>Consultoria especializada em contratos, processos judiciais e defesa de seus interesses de forma estratégica e segura.</p>
+</div>
+</section>
+
+<section id="conteudo" class="services">
+<div class="container">
+<h3>Nossos Serviços Jurídicos</h3>
+<p>Oferecemos suporte completo em questões contratuais e judiciais, garantindo que seus direitos sejam protegidos e que você tenha orientação profissional em cada passo. Nossa equipe combina conhecimento jurídico com experiência prática para atender clientes com eficiência e segurança.</p>
+
+<h4>Benefícios:</h4>
+<ul>
+<li>Revisão e análise de contratos;</li>
+<li>Defesa em processos judiciais;</li>
+<li>Orientação estratégica personalizada;</li>
+<li>Suporte em negociações e acordos;</li>
+<li>Parecer inicial gratuito e rápido.</li>
+</ul>
+
+<a href="https://wa.me/5521985092987" target="_blank" class="button">Falar no WhatsApp</a>
+</div>
+</section>
+
+<footer id="contato">
+<p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas</p>
+<p>📍 Rua Nestor, 845 - Santa Cruz</p>
+</footer>
+
+<a href="https://wa.me/5521985092987" target="_blank" style="position:fixed;bottom:25px;right:25px;background-color:#25D366;color:#fff;padding:15px 20px;border-radius:50px;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.2);transition:transform 0.3s;z-index:10000;">WhatsApp</a>
+<script>
+const btn=document.querySelector('a[href*="wa.me"]');btn.addEventListener('mouseover',()=>btn.style.transform='scale(1.1)');btn.addEventListener('mouseout',()=>btn.style.transform='scale(1)');
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const target=document.querySelector(this.getAttribute('href'));if(target){target.scrollIntoView({behavior:'smooth'});}});});
+</script>
+
+</body>
+</html>
