@@ -3,76 +3,236 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lescio Soluções</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Lescio Soluções Financeiras e Jurídicas</title>
+  <meta name="description" content="Assessoria jurídica e financeira especializada em revisão de contratos, financiamentos e soluções estratégicas.">
+  <meta name="author" content="Lescio Soluções Financeiras e Jurídicas">
+
+  <!-- Segurança -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow">
+
+  <!-- Forçar HTTPS -->
+  <script>
+    if (location.protocol !== "https:") {
+      location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+    }
+  </script>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* ======= ESTILOS GERAIS ======= */
+    * {
       margin: 0;
       padding: 0;
-      background: #f5f5f5;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ======= HEADER ======= */
     header {
-      background: #222;
+      background: #1c1c1c;
       color: #fff;
-      padding: 20px;
-      text-align: center;
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
     }
-    nav {
-      margin-top: 10px;
-    }
+
     nav a {
       color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #f4b400;
     }
-    main {
-      padding: 40px 20px;
+
+    /* ======= HERO ======= */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      color: #fff;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ======= SEÇÃO DE SERVIÇOS ======= */
+    .services {
+      padding: 60px 5%;
+      background: #fff;
       text-align: center;
     }
-    main h2 {
+
+    .services h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #1c1c1c;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .service-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    /* ======= CONTATO ======= */
+    .contact {
+      padding: 50px 5%;
+      background: #f4f4f4;
+      text-align: center;
+    }
+
+    .contact h3 {
       font-size: 1.8rem;
       margin-bottom: 20px;
     }
+
+    .contact p {
+      margin-bottom: 15px;
+    }
+
+    .contact a.button {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #1c1c1c;
+      color: #fff;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .contact a.button:hover {
+      background: #f4b400;
+    }
+
+    /* ======= FOOTER ======= */
     footer {
-      background: #222;
+      background: #1c1c1c;
       color: #fff;
       text-align: center;
       padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    /* ======= RESPONSIVO ======= */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav a {
+        margin: 10px 5px;
+      }
     }
   </style>
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <h1>Bem-vindo à Lescio Soluções</h1>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
+    <h1>Lescio Soluções</h1>
+    <nav aria-label="Menu principal">
+      <a href="#home">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <main>
-    <h2>Soluções digitais para o seu negócio</h2>
-    <p>
-      Este é o site oficial da <strong>Lescio Soluções</strong>.  
-      Aqui você encontra tecnologia, inovação e suporte para transformar suas ideias em realidade.
-    </p>
-  </main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div>
+      <h2>Especialistas em Soluções Jurídicas e Financeiras</h2>
+      <p>Revisão de contratos, financiamentos e suporte jurídico estratégico para proteger seu patrimônio.</p>
+    </div>
+  </section>
 
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="services">
+    <h3>Nossos Serviços</h3>
+    <div class="service-grid">
+      <div class="service-card">
+        <h4>Revisão de Financiamentos</h4>
+        <p>Reduza juros abusivos e negocie melhores condições em contratos de veículos, imóveis e empréstimos.</p>
+      </div>
+      <div class="service-card">
+        <h4>Assessoria Jurídica</h4>
+        <p>Consultoria especializada em questões financeiras, contratuais e defesa de interesses no âmbito judicial.</p>
+      </div>
+      <div class="service-card">
+        <h4>Planejamento Financeiro</h4>
+        <p>Organize suas finanças com estratégias personalizadas para proteger e expandir seu patrimônio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contact">
+    <h3>Fale Conosco</h3>
+    <p>Entre em contato pelo WhatsApp e receba um parecer inicial gratuito.</p>
+    <a href="https://wa.me/5500000000000" target="_blank" class="button">WhatsApp</a>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Lescio Soluções - Todos os direitos reservados</p>
+    <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas - Todos os direitos reservados</p>
   </footer>
+
 </body>
 </html>
