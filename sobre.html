@@ -4,29 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Nós - Lescio Soluções</title>
-  <meta name="description" content="Conheça a equipe da Lescio Soluções Financeiras e Jurídicas: fundador e advogados especializados.">
-  <meta name="author" content="Lescio Soluções Financeiras e Jurídicas">
-
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
     body {
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
       color: #333;
       line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* HEADER */
     header {
       background: rgba(0,0,0,0.9);
       color: #fff;
@@ -41,46 +28,28 @@
 
     header h1 {
       font-size: 1.8rem;
-      letter-spacing: 1px;
     }
 
     nav a {
       color: #fff;
       margin-left: 20px;
+      text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s ease;
+      transition: color 0.3s;
     }
 
     nav a:hover {
       color: #f4f4f4;
     }
 
-    /* HERO */
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://lh3.googleusercontent.com/p/AF1QipMmjd43q_dUFYJga_bbB2CZaRgl25eG4AX0cHHW=s1360-w1360-h1020-rw') no-repeat center/cover;
-      color: #fff;
-      height: 40vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
-    }
-
-    /* TEAM */
     .team {
       display: flex;
       justify-content: center;
-      gap: 60px;
       flex-wrap: wrap;
+      gap: 50px;
       padding: 60px 5%;
       text-align: center;
+      background: #fff;
     }
 
     .member {
@@ -92,38 +61,30 @@
       height: 200px;
       object-fit: cover;
       border-radius: 50%;
-      border: 5px solid #fca311;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: block;
-      margin: 0 auto;
+      border: 5px solid #fca311; /* Moldura oval estilo espelho */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 15px;
+      transition: transform 0.3s;
     }
 
     .member img:hover {
       transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    }
-
-    /* Reflexo tipo espelho */
-    .member img.reflection {
-      -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255,255,255,0.3));
     }
 
     .member h3 {
-      margin-top: 15px;
+      margin-bottom: 5px;
       font-size: 1.2rem;
       color: #0d1b2a;
     }
 
     .member p {
-      font-size: 0.95rem;
+      font-size: 1rem;
       color: #555;
-      margin-top: 5px;
+      font-weight: 500;
     }
 
-    /* FOOTER */
     footer {
-      background-color: #1c1c1c;
+      background: #1c1c1c;
       color: #fff;
       text-align: center;
       padding: 20px;
@@ -134,22 +95,20 @@
       margin: 5px 0;
     }
 
-    /* RESPONSIVO */
-    @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 2rem;
-      }
-
+    /* Responsivo */
+    @media(max-width:768px){
       .team {
-        gap: 40px;
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
-    <h1>Lescio Soluções Financeiras e Jurídicas</h1>
+    <h1>Lescio Soluções</h1>
     <nav>
       <a href="index.html">Início</a>
       <a href="sobre.html">Sobre Nós</a>
@@ -157,35 +116,32 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Conheça Nossa Equipe</h2>
-  </section>
-
+  <!-- EQUIPE -->
   <section class="team">
-    <!-- Fundador -->
+    <!-- João Lescio -->
     <div class="member">
-      <img class="reflection" src="https://i.postimg.cc/mDZTW6QF/foto-funder.jpg" alt="João Lescio - Fundador">
+      <img src="https://i.postimg.cc/mDZTW6QF/foto-funder.jpg" alt="João Lescio - Founder">
       <h3>João Lescio</h3>
-      <p>Fundador</p>
+      <p>Founder</p>
     </div>
 
-    <!-- Advogada Lorena -->
+    <!-- Lorena -->
     <div class="member">
-      <img class="reflection" src="https://i.postimg.cc/GpxqsX6K/foto-lorena.jpg" alt="Lorena Gomes Santana do Nascimento - Advogada OAB/RJ 247.469">
+      <img src="https://i.postimg.cc/GpxqsX6K/foto-lorena.jpg" alt="Lorena Gomes Santana do Nascimento - Advogada">
       <h3>Lorena Gomes Santana do Nascimento</h3>
-      <p>Advogada OAB/RJ 247.469</p>
+      <p>Advogada - OAB/RJ 247.469</p>
     </div>
 
-    <!-- Advogada Rayane -->
+    <!-- Rayane (placeholder, aguardar foto) -->
     <div class="member">
-      <img class="reflection" src="https://i.postimg.cc/Yq0X9L9g/foto-rayane.jpg" alt="Rayane Alves Parreira - Advogada OAB/RJ 240.249">
+      <img src="" alt="Rayane Alves Parreira - Advogada" style="display:none;">
       <h3>Rayane Alves Parreira</h3>
-      <p>Advogada OAB/RJ 240.249</p>
+      <p>Advogada - OAB/RJ 240.249</p>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas - Todos os direitos reservados</p>
+    <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas</p>
     <p>📍 Rua Nestor, 845 - Santa Cruz</p>
   </footer>
 
