@@ -32,10 +32,11 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
       background: #f9f9f9;
       color: #333;
       line-height: 1.6;
+      overflow-x: hidden;
     }
 
     a {
@@ -45,7 +46,7 @@
 
     /* ======= HEADER ======= */
     header {
-      background: #1c1c1c;
+      background: #111;
       color: #fff;
       padding: 20px 5%;
       display: flex;
@@ -54,6 +55,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
     header h1 {
@@ -63,9 +65,10 @@
 
     nav a {
       color: #fff;
-      margin-left: 20px;
+      margin-left: 25px;
       font-weight: 500;
       transition: color 0.3s ease;
+      font-size: 1rem;
     }
 
     nav a:hover {
@@ -77,98 +80,146 @@
       background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                   url('LESCIO%20LOGO.png') no-repeat center center/cover;
       color: #fff;
-      height: 80vh;
+      height: 90vh;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 0 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .hero h2 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 15px;
+      font-weight: 600;
     }
 
     .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
+      font-size: 1.3rem;
+      max-width: 700px;
       margin: 0 auto;
     }
 
     /* ======= SEÇÃO DE SERVIÇOS ======= */
     .services {
-      padding: 60px 5%;
+      padding: 80px 8%;
       background: #fff;
       text-align: center;
     }
 
     .services h3 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #1c1c1c;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #222;
+      position: relative;
+    }
+
+    .services h3::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background: #f4b400;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
     }
 
     .service-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
 
     .service-card {
-      background: #f4f4f4;
-      padding: 20px;
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      border: 1px solid #eee;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      cursor: pointer;
     }
 
     .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      border-color: #f4b400;
     }
 
     .service-card h4 {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      color: #222;
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: #1c1c1c;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .service-card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #f4b400;
+      color: #111;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .service-card a:hover {
+      background: #d19e00;
+      color: #fff;
     }
 
     /* ======= CONTATO ======= */
     .contact {
-      padding: 50px 5%;
-      background: #f4f4f4;
+      padding: 70px 8%;
+      background: #111;
       text-align: center;
+      color: #fff;
     }
 
     .contact h3 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
 
     .contact p {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
     }
 
     .contact a.button {
       display: inline-block;
-      padding: 12px 25px;
-      background: #1c1c1c;
-      color: #fff;
-      border-radius: 8px;
+      padding: 14px 30px;
+      background: #f4b400;
+      color: #111;
+      border-radius: 10px;
+      font-weight: bold;
       transition: background 0.3s ease;
     }
 
     .contact a.button:hover {
-      background: #f4b400;
+      background: #d19e00;
+      color: #fff;
     }
 
     /* ======= FOOTER ======= */
     footer {
-      background: #1c1c1c;
+      background: #000;
       color: #fff;
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
+      padding: 25px;
+      font-size: 0.95rem;
     }
 
     footer p {
@@ -184,6 +235,9 @@
       nav a {
         margin: 10px 5px;
       }
+      .hero h2 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -191,7 +245,7 @@
 
   <!-- HEADER -->
   <header>
-    <h1>Lescio Soluções Financeciras e Jurídicas</h1>
+    <h1>Lescio Soluções Financeiras e Jurídicas</h1>
     <nav aria-label="Menu principal">
       <a href="#home">Início</a>
       <a href="#servicos">Serviços</a>
@@ -213,18 +267,23 @@
     <div class="service-grid">
       <div class="service-card">
         <h4>Revisão de Financiamento Veicular</h4>
-        <p>Reduza juros abusivos do seu veículo e negocie melhores condições. Seja a vista ou a redução de parcelas.</p>
+        <p>Reduza juros abusivos do seu veículo e negocie melhores condições. Seja à vista ou redução de parcelas.</p>
+        <a href="servico-veicular.html">Saiba Mais</a>
+      </div>
       <div class="service-card">
-        <h4>Revisãode Financiamento Imobiliário</h4>
-<p>Reduza juros abusivos do seu imóvel e negocie melhores condições. Seja a vista ou a redução de parcelas.</p>
+        <h4>Revisão de Financiamento Imobiliário</h4>
+        <p>Reduza juros abusivos do seu imóvel e negocie melhores condições. Seja à vista ou redução de parcelas.</p>
+        <a href="servico-imobiliario.html">Saiba Mais</a>
       </div>
       <div class="service-card">
         <h4>Assessoria Jurídica</h4>
         <p>Consultoria especializada em questões financeiras, contratuais e defesa de interesses no âmbito judicial.</p>
+        <a href="servico-juridico.html">Saiba Mais</a>
       </div>
       <div class="service-card">
         <h4>Planejamento Financeiro</h4>
         <p>Organize suas finanças com estratégias personalizadas para proteger e expandir seu patrimônio.</p>
+        <a href="servico-planejamento.html">Saiba Mais</a>
       </div>
     </div>
   </section>
