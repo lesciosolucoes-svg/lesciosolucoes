@@ -72,18 +72,39 @@
     .team-member {
       display: flex;
       align-items: center;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       flex-wrap: wrap;
     }
 
-    .team-member .photo img {
-      width: 120px;
-      height: 120px;
-      border-radius: 12px;
-      margin-right: 20px;
+    .team-member .photo {
+      margin-right: 25px;
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
       border: 3px solid #ccc;
       box-shadow: 0 0 15px rgba(255,255,255,0.5), 0 0 30px rgba(0,0,0,0.1);
-      object-fit: cover;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* Reflexo da foto */
+    .team-member img::after {
+      content: '';
+    }
+
+    .reflection {
+      width: 140px;
+      height: 70px;
+      margin: auto;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0));
+      transform: scaleY(-1);
+      border-radius: 50% / 25%;
+      margin-top: -5px;
     }
 
     .team-member h3 {
@@ -123,9 +144,9 @@
         text-align: center;
       }
 
-      .team-member .photo img {
+      .team-member .photo {
         margin-right: 0;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
       }
     }
   </style>
@@ -149,6 +170,7 @@
     <div class="team-member">
       <div class="photo">
         <img src="https://i.postimg.cc/mDZTW6QF/foto-funder.jpg" alt="João Lescio - Founder">
+        <div class="reflection"></div>
       </div>
       <div>
         <h3>João Lescio</h3>
@@ -159,6 +181,7 @@
     <div class="team-member">
       <div class="photo">
         <img src="https://i.postimg.cc/GpxqsX6K/foto-lorena.jpg" alt="Lorena Gomes Santana do Nascimento">
+        <div class="reflection"></div>
       </div>
       <div>
         <h3>LORENA GOMES SANTANA DO NASCIMENTO</h3>
@@ -168,7 +191,8 @@
 
     <div class="team-member">
       <div class="photo">
-        <img src="https://via.placeholder.com/120x120.png?text=Foto+Rayane" alt="DR.ª Rayane Alves Parreira">
+        <img src="https://via.placeholder.com/140x140.png?text=Foto+Rayane" alt="DR.ª Rayane Alves Parreira">
+        <div class="reflection"></div>
       </div>
       <div>
         <h3>DR.ª RAYANE ALVES PARREIRA</h3>
