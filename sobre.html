@@ -55,35 +55,32 @@
 
     .about {
       padding: 60px 5%;
-      text-align: center;
+      max-width: 900px;
+      margin: auto;
     }
 
-    .about h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    .about img {
-      width: 200px;
+    .team-member img {
+      width: 120px;
       border-radius: 8px;
-      margin-top: 10px;
+      margin-right: 20px;
     }
 
-    .team {
-      margin-top: 40px;
-      text-align: left;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+    .team-member h3 {
+      font-size: 1.3rem;
+      margin-bottom: 5px;
     }
 
-    .team h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-
-    .team p {
-      margin-bottom: 15px;
+    .team-member p {
       font-size: 1rem;
       color: #555;
     }
@@ -99,8 +96,13 @@
 
     /* Responsivo */
     @media (max-width:768px){
-      .about img{
-        width:150px;
+      .team-member {
+        flex-direction: column;
+        text-align: center;
+      }
+      .team-member img {
+        margin-right: 0;
+        margin-bottom: 15px;
       }
     }
   </style>
@@ -117,16 +119,27 @@
 
   <!-- SOBRE NÓS -->
   <section class="about">
-    <h2>João Lescio</h2>
-    <img src="https://i.postimg.cc/mDZTW6QF/foto-funder.jpg" alt="João Lescio">
+    <div class="team-member">
+      <img src="https://i.postimg.cc/mDZTW6QF/foto-funder.jpg" alt="João Lescio">
+      <div>
+        <h3>João Lescio</h3>
+        <p>Fundador</p>
+      </div>
+    </div>
 
-    <div class="team">
-      <h3>Fundador</h3>
-      <p>João Lescio</p>
+    <div class="team-member">
+      <img src="https://i.postimg.cc/GpxqsX6K/foto-lorena.jpg" alt="Lorena Gomes Santana do Nascimento">
+      <div>
+        <h3>LORENA GOMES SANTANA DO NASCIMENTO</h3>
+        <p>Advogada - OAB/RJ 247.469</p>
+      </div>
+    </div>
 
-      <h3>Advogadas</h3>
-      <p>DR.ª RAYANE ALVES PARREIRA OAB/RJ 240.249</p>
-      <p>LORENA GOMES SANTANA DO NASCIMENTO OAB/RJ 247.469</p>
+    <div class="team-member">
+      <div>
+        <h3>DR.ª RAYANE ALVES PARREIRA</h3>
+        <p>Advogada - OAB/RJ 240.249</p>
+      </div>
     </div>
   </section>
 
