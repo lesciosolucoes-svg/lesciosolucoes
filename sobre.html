@@ -73,7 +73,7 @@
       text-shadow: 0 2px 6px rgba(0,0,0,0.7);
     }
 
-    /* TIME */
+    /* TEAM */
     .team {
       display: flex;
       justify-content: center;
@@ -95,11 +95,18 @@
       border: 5px solid #fca311;
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
       transition: transform 0.3s, box-shadow 0.3s;
+      display: block;
+      margin: 0 auto;
     }
 
     .member img:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* Reflexo tipo espelho */
+    .member img.reflection {
+      -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255,255,255,0.3));
     }
 
     .member h3 {
@@ -112,11 +119,6 @@
       font-size: 0.95rem;
       color: #555;
       margin-top: 5px;
-    }
-
-    /* Efeito reflexo */
-    .member img::after {
-      content: "";
     }
 
     /* FOOTER */
@@ -162,16 +164,23 @@
   <section class="team">
     <!-- Fundador -->
     <div class="member">
-      <img src="https://i.postimg.cc/mDZTW6QF/foto-funder.jpg" alt="João Lescio - Fundador">
+      <img class="reflection" src="https://i.postimg.cc/mDZTW6QF/foto-funder.jpg" alt="João Lescio - Fundador">
       <h3>João Lescio</h3>
       <p>Fundador</p>
     </div>
 
     <!-- Advogada Lorena -->
     <div class="member">
-      <img src="https://i.postimg.cc/GpxqsX6K/foto-lorena.jpg" alt="Lorena Gomes Santana do Nascimento - Advogada OAB/RJ 247.469">
+      <img class="reflection" src="https://i.postimg.cc/GpxqsX6K/foto-lorena.jpg" alt="Lorena Gomes Santana do Nascimento - Advogada OAB/RJ 247.469">
       <h3>Lorena Gomes Santana do Nascimento</h3>
       <p>Advogada OAB/RJ 247.469</p>
+    </div>
+
+    <!-- Advogada Rayane -->
+    <div class="member">
+      <img class="reflection" src="https://i.postimg.cc/Yq0X9L9g/foto-rayane.jpg" alt="Rayane Alves Parreira - Advogada OAB/RJ 240.249">
+      <h3>Rayane Alves Parreira</h3>
+      <p>Advogada OAB/RJ 240.249</p>
     </div>
   </section>
 
