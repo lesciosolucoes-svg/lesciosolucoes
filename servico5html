@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revisão de Empréstimos Bancários - Lescio Soluções</title>
+  <meta name="description" content="Revisão de empréstimos bancários para reduzir juros abusivos e renegociar suas dívidas.">
+  <link rel="stylesheet" href="style.css"> <!-- caso esteja usando CSS externo -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: 500;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .contact-box {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f7f7f7;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 25px;
+      background: #1c1c1c;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .contact-box a:hover {
+      background: #333;
+    }
+
+    footer {
+      background: #1c1c1c;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lescio Soluções</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="index.html#servicos">Serviços</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Revisão de Empréstimos Bancários</h2>
+    <p>
+      Muitos contratos de empréstimos bancários contêm cláusulas abusivas e taxas de juros acima do permitido.
+      Nossa equipe jurídica e financeira é especializada em identificar essas irregularidades e buscar a redução das parcelas ou até mesmo a devolução de valores pagos indevidamente.
+    </p>
+    <p>
+      Atuamos tanto de forma extrajudicial (negociações diretas com o banco) quanto judicial, garantindo a defesa dos seus direitos.
+    </p>
+    <p>
+      Se você possui empréstimos bancários ativos ou já quitados, é possível analisar se houve cobrança indevida e recuperar parte do que foi pago.
+    </p>
+
+    <div class="contact-box">
+      <h3>Quer uma análise gratuita?</h3>
+      <p>Envie seu contrato de empréstimo e receba um parecer inicial sem custo.</p>
+      <a href="https://wa.me/5521985092987" target="_blank">📲 Falar no WhatsApp</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
