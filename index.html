@@ -139,40 +139,41 @@
     }
 
     .service-card {
-      background: #fafafa;
+      background: #000;
+      color: #fff;
       padding: 25px;
       border-radius: 12px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #eee;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .service-card h4 {
       font-size: 1.3rem;
       margin-bottom: 10px;
-      color: #1c1c1c;
+      color: #fff;
     }
 
     .service-card p {
-      color: #555;
+      color: #e0e0e0;
       font-size: 0.95rem;
+      flex-grow: 1;
     }
 
-    .service-card a {
-      display: block;
-      margin-top: 15px;
-      color: #1c1c1c;
+    .service-card .saiba {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .service-card .saiba a {
+      color: #fff;
       font-weight: 600;
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
-    .service-card a:hover {
-      color: #555;
+    .service-card .saiba a:hover {
+      color: #fca311;
     }
 
     /* CONTATO */
@@ -285,32 +286,31 @@
       <div class="service-card">
         <h4>Revisão de Financiamento Veicular</h4>
         <p>Reduza juros abusivos do seu veículo e negocie melhores condições.</p>
-        <a href="servico1.html">Saiba mais →</a>
+        <div class="saiba"><a href="servico1.html">Saiba mais →</a></div>
       </div>
 
       <div class="service-card">
         <h4>Revisão de Financiamento Imobiliário</h4>
         <p>Reduza juros abusivos do seu imóvel e tenha parcelas mais justas.</p>
-        <a href="servico2.html">Saiba mais →</a>
+        <div class="saiba"><a href="servico2.html">Saiba mais →</a></div>
       </div>
 
-      <!-- NOVO SERVIÇO (movido antes da Assessoria Jurídica) -->
       <div class="service-card">
         <h4>Revisão de Empréstimos Bancários</h4>
         <p>Elimine juros abusivos e renegocie suas dívidas com melhores condições.</p>
-        <a href="servico5.html">Saiba mais →</a>
+        <div class="saiba"><a href="servico5.html">Saiba mais →</a></div>
       </div>
 
       <div class="service-card">
         <h4>Assessoria Jurídica</h4>
         <p>Consultoria especializada em contratos, processos judiciais e defesa de interesses.</p>
-        <a href="servico3.html">Saiba mais →</a>
+        <div class="saiba"><a href="servico3.html">Saiba mais →</a></div>
       </div>
 
       <div class="service-card">
         <h4>Planejamento Financeiro</h4>
         <p>Organize suas finanças com estratégias personalizadas.</p>
-        <a href="servico4.html">Saiba mais →</a>
+        <div class="saiba"><a href="servico4.html">Saiba mais →</a></div>
       </div>
     </div>
   </section>
