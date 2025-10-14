@@ -3,140 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Direito do Agronegócio - Lescio Soluções</title>
-  <meta name="description" content="Prorrogação de dívidas, renegociação e limpeza de nome para produtores rurais e empresas do agro.">
+  <meta name="description" content="Atuação especializada em Direito do Agronegócio. Soluções jurídicas e financeiras estratégicas para produtores rurais e empresas do setor.">
   <meta name="author" content="Lescio Soluções Financeiras e Jurídicas">
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
 
-    header {
-      background: #1c1c1c;
-      color: #fff;
-      padding: 15px 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    header { background: rgba(0, 0, 0, 0.9); color: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { font-size: 1.5rem; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #fca311; }
 
-    header h1 {
-      font-size: 1.6rem;
-    }
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://lh3.googleusercontent.com/p/AF1QipMmjd43q_dUFYJga_bbB2CZaRgl25eG4AX0cHHW=s1360-w1360-h1020-rw') no-repeat center center/cover; color: #fff; height: 50vh; display: flex; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+    .hero h2 { font-size: 2.5rem; text-shadow: 0 2px 6px rgba(0,0,0,0.6); }
 
-    nav a {
-      color: #fff;
-      margin-left: 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
+    section.content { padding: 60px 8%; background: #fff; text-align: left; max-width: 1100px; margin: auto; }
+    section.content h3 { font-size: 1.8rem; color: #000; margin-bottom: 20px; }
+    section.content p { margin-bottom: 15px; color: #444; font-size: 1.05rem; }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+    .contact-section { text-align: center; margin-top: 50px; }
+    .contact-section a { display: inline-block; background: #1c1c1c; color: #fff; padding: 12px 25px; border-radius: 8px; font-weight: 600; transition: background 0.3s ease; }
+    .contact-section a:hover { background: #333; }
 
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                  url("https://images.unsplash.com/photo-1599058917212-d750089bc635") no-repeat center center/cover;
-      color: #fff;
-      text-align: center;
-      padding: 80px 20px;
-    }
+    footer { background: #1c1c1c; color: #fff; text-align: center; padding: 20px; font-size: 0.9rem; margin-top: 60px; }
+    footer a { color: #fff; text-decoration: underline; }
 
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      max-width: 650px;
-      margin: 0 auto;
-    }
-
-    .content {
-      padding: 50px 8%;
-      background: #fff;
-    }
-
-    .content h3 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: #222;
-    }
-
-    .content p {
-      margin-bottom: 20px;
-      color: #444;
-    }
-
-    .highlight {
-      background: #fef6e4;
-      border-left: 5px solid #fca311;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-
-    .highlight ul {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .highlight ul li {
-      margin-bottom: 12px;
-      font-weight: bold;
-      color: #222;
-    }
-
-    .content ul {
-      margin: 20px 0;
-      padding-left: 20px;
-    }
-
-    .content ul li {
-      margin-bottom: 10px;
-    }
-
-    .contact-box {
-      background: #f7f7f7;
-      padding: 30px;
-      margin-top: 40px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    .contact-box h4 {
-      margin-bottom: 15px;
-    }
-
-    .contact-box a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      background: #1c1c1c;
-      color: #fff;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .contact-box a:hover {
-      background: #333;
-    }
-
-    footer {
-      background: #1c1c1c;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 0.9rem;
+    @media (max-width: 768px) {
+      header { flex-direction: column; text-align: center; }
+      nav { display: flex; flex-direction: column; }
+      nav a { margin: 8px 0; }
+      .hero h2 { font-size: 1.8rem; }
     }
   </style>
 </head>
@@ -144,46 +43,40 @@
 
   <!-- HEADER -->
   <header>
-    <h1>Lescio Soluções</h1>
+    <h1>Lescio Soluções Financeiras e Jurídicas</h1>
     <nav>
       <a href="index.html">Início</a>
       <a href="index.html#servicos">Serviços</a>
-      <a href="sobre.html">Sobre Nós</a>
       <a href="index.html#contato">Contato</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <h2>Direito do Agronegócio</h2>
-    <p>Soluções jurídicas e financeiras para quem produz no campo. O foco é claro: proteger você, sua produção e sua tranquilidade.</p>
+    <div>
+      <h2>Direito do Agronegócio</h2>
+    </div>
   </section>
 
   <!-- CONTEÚDO -->
   <section class="content">
-    <h3>Nosso Objetivo Principal</h3>
-    <div class="highlight">
-      <ul>
-        <li>📌 Prorrogação de dívidas rurais</li>
-        <li>📌 Renegociação de contratos e financiamentos</li>
-        <li>📌 Limpeza do nome e recuperação de crédito</li>
-      </ul>
-    </div>
+    <h3>Atuação Especializada no Setor Agro</h3>
+    <p>O agronegócio é um dos pilares da economia brasileira, e por isso exige uma assessoria jurídica e financeira especializada. Nossa equipe atua diretamente com produtores rurais, cooperativas e empresas do setor, oferecendo soluções estratégicas para proteger o patrimônio e garantir segurança nas relações comerciais.</p>
 
-    <h3>Atuação Complementar</h3>
-    <p>Além do foco em dívidas e crédito, oferecemos suporte completo para produtores rurais, cooperativas e empresas do agro.</p>
-
-    <ul>
-      <li>📑 Revisão e elaboração de contratos rurais</li>
-      <li>🏢 Assessoria para cooperativas e empresas do setor</li>
-      <li>⚖️ Defesa em ações judiciais e consultoria preventiva</li>
-      <li>🌱 Planejamento jurídico para expansão e segurança da atividade</li>
+    <p>Entre as principais áreas de atuação, destacam-se:</p>
+    <ul style="margin-left: 20px; color: #444; line-height: 1.8;">
+      <li>Renegociação e prorrogação de dívidas agrícolas;</li>
+      <li>Revisão de contratos bancários e financiamentos rurais;</li>
+      <li>Defesa em execuções e busca e apreensão de máquinas e bens rurais;</li>
+      <li>Planejamento patrimonial e sucessório rural;</li>
+      <li>Consultoria jurídica para associações e cooperativas do agro.</li>
     </ul>
 
-    <div class="contact-box">
-      <h4>Fale com nossa especialista em Direito do Agronegócio</h4>
-      <a href="https://wa.me/5521985092987" target="_blank">WhatsApp</a>
-      <a href="mailto:lesciosolucoes@gmail.com">E-mail</a>
+    <p>Nosso objetivo é garantir que o produtor rural e as empresas do agronegócio tenham segurança jurídica, equilíbrio contratual e sustentabilidade financeira em suas operações.</p>
+
+    <div class="contact-section">
+      <p>📞 Fale com nossa equipe e receba uma análise gratuita do seu caso.</p>
+      <a href="https://wa.me/5521985092987" target="_blank">Falar no WhatsApp</a>
     </div>
   </section>
 
@@ -191,6 +84,7 @@
   <footer>
     <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas - Todos os direitos reservados</p>
     <p>📍 Rua Nestor, 845 - Santa Cruz</p>
+    <p>Email: <a href="mailto:lesciosolucoes@gmail.com">lesciosolucoes@gmail.com</a></p>
   </footer>
 
 </body>
