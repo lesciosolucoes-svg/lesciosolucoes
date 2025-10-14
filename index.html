@@ -23,206 +23,54 @@
   </script>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
 
     /* HEADER */
-    header {
-      background: rgba(0, 0, 0, 0.9);
-      color: #fff;
-      padding: 15px 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header h1 {
-      font-size: 1.8rem;
-      letter-spacing: 1px;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #f4f4f4;
-    }
+    header { background: rgba(0, 0, 0, 0.9); color: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    header h1 { font-size: 1.8rem; letter-spacing: 1px; }
+    nav { display: flex; align-items: center; }
+    nav a { color: #fff; margin-left: 20px; font-weight: 500; transition: color 0.3s ease; }
+    nav a:hover { color: #f4f4f4; }
+    .sobre-btn { background-color: #fca311; color: #fff; padding: 8px 18px; border-radius: 6px; font-weight: 600; margin-left: 20px; transition: background 0.3s ease; }
+    .sobre-btn:hover { background-color: #e69500; }
 
     /* HERO */
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                  url('https://lh3.googleusercontent.com/p/AF1QipMmjd43q_dUFYJga_bbB2CZaRgl25eG4AX0cHHW=s1360-w1360-h1020-rw') no-repeat center center/cover;
-      color: #fff;
-      height: 60vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
-    }
-
-    .hero h2 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      color: #ffffff;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      color: #e0e0e0;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.6);
-      max-width: 650px;
-      margin: 0 auto;
-    }
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://lh3.googleusercontent.com/p/AF1QipMmjd43q_dUFYJga_bbB2CZaRgl25eG4AX0cHHW=s1360-w1360-h1020-rw') no-repeat center center/cover; color: #fff; height: 60vh; display: flex; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+    .hero h2 { font-size: 2.8rem; font-weight: 700; color: #ffffff; text-shadow: 0 2px 6px rgba(0,0,0,0.7); margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; color: #e0e0e0; text-shadow: 0 1px 4px rgba(0,0,0,0.6); max-width: 650px; margin: 0 auto; }
 
     /* SERVIÇOS */
-    .services {
-      padding: 60px 5%;
-      background: #fff;
-      text-align: center;
-    }
-
-    .services h3 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      color: #222;
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-
-    .service-card {
-      background: #fafafa;
-      padding: 25px;
-      border-radius: 12px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid #eee;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
-
-    .service-card h4 {
-      font-size: 1.3rem;
-      margin-bottom: 10px;
-      color: #1c1c1c;
-    }
-
-    .service-card p {
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    .service-card a {
-      display: block;
-      margin-top: 15px;
-      color: #1c1c1c;
-      font-weight: 600;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .service-card a:hover {
-      color: #555;
-    }
+    .services { padding: 60px 5%; background: #fff; text-align: center; }
+    .services h3 { font-size: 2rem; margin-bottom: 30px; color: #222; }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+    .service-card { background: #fafafa; padding: 25px; border-radius: 12px; border: 1px solid #eee; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+    .service-card h4 { font-size: 1.3rem; margin-bottom: 10px; color: #000; }
+    .service-card p { color: #333; font-size: 0.95rem; }
+    .service-card a { display: block; margin-top: 15px; color: #000; font-weight: 600; text-decoration: none; transition: color 0.3s ease; }
+    .service-card a:hover { color: #fca311; }
 
     /* CONTATO */
-    .contact {
-      padding: 50px 5%;
-      background: #f7f7f7;
-      text-align: center;
-    }
-
-    .contact h3 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: #222;
-    }
-
-    .contact p {
-      margin-bottom: 15px;
-      color: #555;
-    }
-
-    .contact a.button {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #1c1c1c;
-      color: #fff;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-      font-weight: 600;
-    }
-
-    .contact a.button:hover {
-      background: #333;
-    }
+    .contact { padding: 50px 5%; background: #f7f7f7; text-align: center; }
+    .contact h3 { font-size: 1.8rem; margin-bottom: 20px; color: #222; }
+    .contact p { margin-bottom: 15px; color: #555; }
+    .contact a.button { display: inline-block; padding: 12px 25px; background: #1c1c1c; color: #fff; border-radius: 8px; transition: background 0.3s ease; font-weight: 600; }
+    .contact a.button:hover { background: #333; }
 
     /* FOOTER */
-    footer {
-      background: #1c1c1c;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-
-    footer p {
-      margin: 5px 0;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: underline;
-    }
+    footer { background: #1c1c1c; color: #fff; text-align: center; padding: 20px; font-size: 0.9rem; }
+    footer p { margin: 5px 0; }
+    footer a { color: #fff; text-decoration: underline; }
 
     /* RESPONSIVO */
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      nav a {
-        margin: 10px 5px;
-      }
-
-      .hero h2 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
+      header { flex-direction: column; text-align: center; }
+      nav { flex-direction: column; }
+      nav a, .sobre-btn { margin: 10px 0; }
+      .hero h2 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -235,6 +83,7 @@
       <a href="#home">Início</a>
       <a href="#servicos">Serviços</a>
       <a href="#contato">Contato</a>
+      <a href="sobre.html" class="sobre-btn">Sobre Nós</a>
     </nav>
   </header>
 
@@ -255,23 +104,25 @@
         <p>Reduza juros abusivos do seu veículo e negocie melhores condições.</p>
         <a href="servico1.html">Saiba mais →</a>
       </div>
-
       <div class="service-card">
         <h4>Revisão de Financiamento Imobiliário</h4>
         <p>Reduza juros abusivos do seu imóvel e tenha parcelas mais justas.</p>
         <a href="servico2.html">Saiba mais →</a>
       </div>
-
       <div class="service-card">
         <h4>Assessoria Jurídica</h4>
         <p>Consultoria especializada em contratos, processos judiciais e defesa de interesses.</p>
         <a href="servico3.html">Saiba mais →</a>
       </div>
-
       <div class="service-card">
-        <h4>Consultoria para o Agronegócio</h4>
-        <p>Prorrogação da dívida, revisão contratual e limpeza de nome, garantindo segurança jurídica e financeira para produtores rurais e empresas do agro.</p>
+        <h4>Planejamento Financeiro</h4>
+        <p>Organize suas finanças com estratégias personalizadas.</p>
         <a href="servico4.html">Saiba mais →</a>
+      </div>
+      <div class="service-card">
+        <h4>Direito do Agronegócio</h4>
+        <p>Atuação especializada para produtores rurais e empresas do setor, com soluções jurídicas e financeiras estratégicas para o campo.</p>
+        <a href="servico5.html">Saiba mais →</a>
       </div>
     </div>
   </section>
