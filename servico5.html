@@ -3,78 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revisão de Empréstimos Bancários - Lescio Soluções</title>
-  <meta name="description" content="Elimine juros abusivos e renegocie seus empréstimos bancários com melhores condições através da nossa assessoria especializada.">
+  <title>Direito do Agronegócio - Lescio Soluções</title>
+  <meta name="description" content="Prorrogação de dívidas, renegociação e limpeza de nome para produtores rurais e empresas do agro.">
   <meta name="author" content="Lescio Soluções Financeiras e Jurídicas">
 
-  <!-- Fonte sofisticada -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
   <style>
-    /* Reset básico */
-    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Montserrat', sans-serif; }
-    body { color:#333; line-height:1.6; background-color:#f9f9f9; }
-    header { background-color:#0d1b2a; color:#fff; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:1000; }
-    header h1 { font-size:1.5rem; font-weight:700; }
-    nav a { color:#fff; text-decoration:none; margin-left:25px; font-weight:500; transition:color 0.3s; }
-    nav a:hover { color:#fca311; }
-    /* hero usa a mesma imagem que a página veicular (mesmo URL) */
-    .hero { height:70vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; background:linear-gradient(rgba(13,27,42,0.6), rgba(13,27,42,0.6)), url('https://lh3.googleusercontent.com/p/AF1QipMmjd43q_dUFYJga_bbB2CZaRgl25eG4AX0cHHW=s1360-w1360-h1020-rw') no-repeat center/cover; padding:0 20px; }
-    .hero h2 { font-size:3rem; font-weight:700; margin-bottom:20px; }
-    .hero p { font-size:1.25rem; }
-    .services { background-color:#fff; padding:80px 20px; }
-    .services .container { max-width:900px; margin:auto; }
-    .services h3 { font-size:2rem; color:#0d1b2a; margin-bottom:20px; }
-    .services p { margin-bottom:20px; font-size:1.1rem; }
-    .services ul { list-style-type:none; margin-bottom:30px; }
-    .services ul li { margin-bottom:10px; padding-left:20px; position:relative; font-weight:500; }
-    .services ul li::before { content:"✓"; position:absolute; left:0; color:#fca311; font-weight:700; }
-    .button { display:inline-block; background-color:#fca311; color:#fff; padding:15px 30px; font-size:1.1rem; font-weight:600; border-radius:50px; text-decoration:none; transition:background-color 0.3s; }
-    .button:hover { background-color:#e69500; }
-    footer { background-color:#0d1b2a; color:#fff; text-align:center; padding:30px 20px; }
-    footer p { margin-bottom:5px; font-size:0.95rem; }
-    footer a { color:#fff; text-decoration:underline; }
-    @media(max-width:768px){ .hero h2{ font-size:2.2rem; } .hero p{ font-size:1rem; } nav a{ margin-left:15px; } }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1c1c1c;
+      color: #fff;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url("https://images.unsplash.com/photo-1599058917212-d750089bc635") no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .content {
+      padding: 50px 8%;
+      background: #fff;
+    }
+
+    .content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .content p {
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .highlight {
+      background: #fef6e4;
+      border-left: 5px solid #fca311;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .highlight ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .highlight ul li {
+      margin-bottom: 12px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .content ul {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+
+    .content ul li {
+      margin-bottom: 10px;
+    }
+
+    .contact-box {
+      background: #f7f7f7;
+      padding: 30px;
+      margin-top: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .contact-box h4 {
+      margin-bottom: 15px;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background: #1c1c1c;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .contact-box a:hover {
+      background: #333;
+    }
+
+    footer {
+      background: #1c1c1c;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <h1>Lescio Soluções</h1>
-    <nav aria-label="Menu principal">
+    <nav>
       <a href="index.html">Início</a>
-      <a href="#conteudo">Serviço</a>
-      <a href="#contato">Contato</a>
+      <a href="index.html#servicos">Serviços</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="index.html#contato">Contato</a>
     </nav>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
-    <div>
-      <h2>Revisão de Empréstimos Bancários</h2>
-      <p>Elimine juros abusivos e renegocie suas dívidas com condições mais justas.</p>
-    </div>
+    <h2>Direito do Agronegócio</h2>
+    <p>Soluções jurídicas e financeiras para quem produz no campo. O foco é claro: proteger você, sua produção e sua tranquilidade.</p>
   </section>
 
-  <section id="conteudo" class="services">
-    <div class="container">
-      <h3>Como ajudamos você</h3>
-      <p>Nossa equipe analisa seus contratos de empréstimo bancário para identificar cobranças indevidas e cláusulas abusivas. Trabalhamos para reduzir juros, reestruturar prazos e negociar diretamente com os bancos, garantindo mais tranquilidade financeira.</p>
-
-      <h4>Benefícios:</h4>
+  <!-- CONTEÚDO -->
+  <section class="content">
+    <h3>Nosso Objetivo Principal</h3>
+    <div class="highlight">
       <ul>
-        <li>Identificação de juros abusivos e encargos ilegais;</li>
-        <li>Renegociação de parcelas e prazos mais justos;</li>
-        <li>Assessoria jurídica completa na defesa do consumidor;</li>
-        <li>Acompanhamento personalizado em todo o processo;</li>
-        <li>Primeira análise gratuita e rápida.</li>
+        <li>📌 Prorrogação de dívidas rurais</li>
+        <li>📌 Renegociação de contratos e financiamentos</li>
+        <li>📌 Limpeza do nome e recuperação de crédito</li>
       </ul>
+    </div>
 
-      <a href="https://wa.me/5521985092987" target="_blank" class="button">Falar no WhatsApp</a>
+    <h3>Atuação Complementar</h3>
+    <p>Além do foco em dívidas e crédito, oferecemos suporte completo para produtores rurais, cooperativas e empresas do agro.</p>
+
+    <ul>
+      <li>📑 Revisão e elaboração de contratos rurais</li>
+      <li>🏢 Assessoria para cooperativas e empresas do setor</li>
+      <li>⚖️ Defesa em ações judiciais e consultoria preventiva</li>
+      <li>🌱 Planejamento jurídico para expansão e segurança da atividade</li>
+    </ul>
+
+    <div class="contact-box">
+      <h4>Fale com nossa especialista em Direito do Agronegócio</h4>
+      <a href="https://wa.me/5521985092987" target="_blank">WhatsApp</a>
+      <a href="mailto:lesciosolucoes@gmail.com">E-mail</a>
     </div>
   </section>
 
-  <footer id="contato">
-    <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas</p>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas - Todos os direitos reservados</p>
     <p>📍 Rua Nestor, 845 - Santa Cruz</p>
   </footer>
 
