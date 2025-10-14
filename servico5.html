@@ -4,66 +4,126 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Direito do Agronegócio - Lescio Soluções</title>
-  <meta name="description" content="Prorrogação de dívidas, renegociação e limpeza de nome para produtores rurais e empresas do agro.">
+  <meta name="description" content="Renegociação de dívidas, prorrogação de contratos e recuperação financeira para produtores rurais e empresas do agro.">
   <meta name="author" content="Lescio Soluções Financeiras e Jurídicas">
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Fonte profissional -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset básico */
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat',sans-serif; }
+    body { color:#333; line-height:1.6; background-color:#f9f9f9; }
+
+    /* Cabeçalho */
+    header { 
+      background-color:#0d1b2a; 
+      color:#fff; 
+      padding:20px 40px; 
+      display:flex; 
+      justify-content:space-between; 
+      align-items:center; 
+      position:sticky; 
+      top:0; 
+      z-index:1000; 
+    }
+    header h1 { font-size:1.5rem; font-weight:700; }
+    nav a { color:#fff; text-decoration:none; margin-left:25px; font-weight:500; transition:color 0.3s; }
+    nav a:hover { color:#fca311; }
+
+    /* Hero section */
+    .hero { 
+      height:70vh; 
+      display:flex; 
+      align-items:center; 
+      justify-content:center; 
+      text-align:center; 
+      color:#fff; 
+      background:linear-gradient(rgba(13,27,42,0.6), rgba(13,27,42,0.6)), url('fazenda.jpg') no-repeat center/cover; 
+      padding:0 20px; 
+    }
+    .hero h2 { font-size:3rem; font-weight:700; margin-bottom:20px; }
+    .hero p { font-size:1.25rem; }
+
+    /* Seção principal */
+    .services { background-color:#fff; padding:80px 20px; }
+    .services .container { max-width:900px; margin:auto; }
+    .services h3 { font-size:2rem; color:#0d1b2a; margin-bottom:20px; }
+    .services p { margin-bottom:20px; font-size:1.1rem; }
+    .services ul { list-style-type:none; margin-bottom:30px; }
+    .services ul li { margin-bottom:10px; padding-left:20px; position:relative; font-weight:500; }
+    .services ul li::before { content:"✓"; position:absolute; left:0; color:#fca311; font-weight:700; }
+
+    /* Botão principal */
+    .button { 
+      display:inline-block; 
+      background-color:#fca311; 
+      color:#fff; 
+      padding:15px 30px; 
+      font-size:1.1rem; 
+      font-weight:600; 
+      border-radius:50px; 
+      text-decoration:none; 
+      transition:background-color 0.3s; 
+    }
+    .button:hover { background-color:#e69500; }
+
+    /* Rodapé */
+    footer { background-color:#0d1b2a; color:#fff; text-align:center; padding:30px 20px; }
+    footer p { margin-bottom:5px; font-size:0.95rem; }
+    footer a { color:#fff; text-decoration:underline; }
+
+    /* Responsividade */
+    @media(max-width:768px){
+      .hero h2{ font-size:2.2rem; }
+      .hero p{ font-size:1rem; }
+      nav a{ margin-left:15px; }
+    }
+  </style>
 </head>
 <body>
 
   <!-- Cabeçalho -->
-  <header class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">Lescio Soluções</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <h1>Lescio Soluções</h1>
+    <nav aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="#conteudo">Serviço</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </header>
 
-  <!-- Seção Hero -->
-  <section class="hero" style="background-image: url('fazenda.jpg');">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Direito do Agronegócio</h1>
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h2>Direito do Agronegócio</h2>
       <p>Renegociação de dívidas, prorrogação de contratos e recuperação financeira para produtores rurais e empresas do agro.</p>
     </div>
   </section>
 
   <!-- Conteúdo principal -->
-  <section class="service-content">
+  <section id="conteudo" class="services">
     <div class="container">
-      <h2>Especialistas em soluções jurídicas e financeiras no setor agro</h2>
-      <p>
-        O agronegócio é um dos setores mais importantes da economia brasileira, mas também enfrenta desafios financeiros e contratuais significativos.
-        Nossa equipe atua para proteger o patrimônio e garantir a continuidade das atividades rurais, com soluções personalizadas e estratégicas.
-      </p>
+      <h3>O que fazemos</h3>
+      <p>O agronegócio é um dos pilares da economia brasileira, mas também enfrenta desafios financeiros e contratuais. Nossa equipe atua para proteger o patrimônio rural, garantir a continuidade das atividades e oferecer soluções jurídicas e financeiras sob medida.</p>
 
-      <h3>Principais atuações</h3>
+      <h4>Principais atuações:</h4>
       <ul>
-        <li>📄 Revisão e renegociação de contratos bancários rurais</li>
-        <li>💰 Prorrogação de dívidas agrícolas</li>
-        <li>⚖️ Defesa em execuções e cobranças</li>
-        <li>🚜 Limpeza de nome e regularização de crédito rural</li>
-        <li>🌾 Assessoria jurídica e financeira completa para produtores e empresas do agro</li>
+        <li>Revisão e renegociação de contratos bancários rurais;</li>
+        <li>Prorrogação de dívidas agrícolas;</li>
+        <li>Defesa em execuções e cobranças;</li>
+        <li>Limpeza de nome e regularização de crédito rural;</li>
+        <li>Assessoria jurídica e financeira completa para produtores e empresas do agro.</li>
       </ul>
 
-      <div class="cta">
-        <a href="contato.html" class="btn">Falar com especialista</a>
-      </div>
+      <a href="https://wa.me/5521985092987" target="_blank" class="button">Falar com especialista</a>
     </div>
   </section>
 
   <!-- Rodapé -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas. Todos os direitos reservados.</p>
-    </div>
+  <footer id="contato">
+    <p>&copy; 2025 Lescio Soluções Financeiras e Jurídicas</p>
+    <p>📍 Rua Nestor, 845 - Santa Cruz</p>
   </footer>
 
 </body>
