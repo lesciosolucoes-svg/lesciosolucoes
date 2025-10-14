@@ -7,31 +7,86 @@
   <meta name="description" content="Reduza juros abusivos do seu financiamento imobiliário e tenha parcelas mais justas com nossa assessoria especializada.">
   <meta name="author" content="Lescio Soluções Financeiras e Jurídicas">
 
+  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    /* Reset básico */
     * { margin:0; padding:0; box-sizing:border-box; font-family: 'Montserrat', sans-serif; }
     body { color:#333; line-height:1.6; background-color:#f9f9f9; }
-    header { background-color:#0d1b2a; color:#fff; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:1000; }
+
+    /* Cabeçalho */
+    header { 
+      background-color:#0d1b2a; 
+      color:#fff; 
+      padding:20px 40px; 
+      display:flex; 
+      justify-content:space-between; 
+      align-items:center; 
+      position:sticky; 
+      top:0; 
+      z-index:1000; 
+    }
     header h1 { font-size:1.5rem; font-weight:700; }
     nav a { color:#fff; text-decoration:none; margin-left:25px; font-weight:500; transition:color 0.3s; }
     nav a:hover { color:#fca311; }
-    .hero { height:70vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; background:linear-gradient(rgba(13,27,42,0.6), rgba(13,27,42,0.6)), url('https://lh3.googleusercontent.com/p/AF1QipMmjd43q_dUFYJga_bbB2CZaRgl25eG4AX0cHHW=s1360-w1360-h1020-rw') no-repeat center/cover; padding:0 20px; }
+
+    /* Hero */
+    .hero {
+      height:70vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:#fff;
+      background:linear-gradient(rgba(13,27,42,0.6), rgba(13,27,42,0.6)), url('revisao.jpg') no-repeat center/cover;
+      padding:0 20px;
+    }
     .hero h2 { font-size:3rem; font-weight:700; margin-bottom:20px; }
     .hero p { font-size:1.25rem; }
+
+    /* Seção de serviços */
     .services { background-color:#fff; padding:80px 20px; }
     .services .container { max-width:900px; margin:auto; }
     .services h3 { font-size:2rem; color:#0d1b2a; margin-bottom:20px; }
     .services p { margin-bottom:20px; font-size:1.1rem; }
+    .services h4 { color:#0d1b2a; font-size:1.3rem; margin:30px 0 10px; }
+
+    /* Lista */
     .services ul { list-style-type:none; margin-bottom:30px; }
     .services ul li { margin-bottom:10px; padding-left:20px; position:relative; font-weight:500; }
     .services ul li::before { content:"✓"; position:absolute; left:0; color:#fca311; font-weight:700; }
-    .button { display:inline-block; background-color:#fca311; color:#fff; padding:15px 30px; font-size:1.1rem; font-weight:600; border-radius:50px; text-decoration:none; transition:background-color 0.3s; }
+
+    /* Botão */
+    .button {
+      display:inline-block;
+      background-color:#fca311;
+      color:#fff;
+      padding:15px 30px;
+      font-size:1.1rem;
+      font-weight:600;
+      border-radius:50px;
+      text-decoration:none;
+      transition:background-color 0.3s;
+    }
     .button:hover { background-color:#e69500; }
-    footer { background-color:#0d1b2a; color:#fff; text-align:center; padding:30px 20px; }
+
+    /* Rodapé */
+    footer { 
+      background-color:#0d1b2a; 
+      color:#fff; 
+      text-align:center; 
+      padding:30px 20px; 
+    }
     footer p { margin-bottom:5px; font-size:0.95rem; }
     footer a { color:#fff; text-decoration:underline; }
-    @media(max-width:768px){ .hero h2{ font-size:2.2rem; } .hero p{ font-size:1rem; } nav a{ margin-left:15px; } }
+
+    /* Responsividade */
+    @media(max-width:768px){ 
+      .hero h2{ font-size:2.2rem; } 
+      .hero p{ font-size:1rem; } 
+      nav a{ margin-left:15px; } 
+    }
   </style>
 </head>
 <body>
