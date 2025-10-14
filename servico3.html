@@ -17,7 +17,7 @@
     nav a { color:#fff; text-decoration:none; margin-left:25px; font-weight:500; transition:color 0.3s; }
     nav a:hover { color:#fca311; }
 
-    /* Hero com imagem tribunal.jpg - imagem enquadrada mais para baixo */
+    /* Hero com imagem tribunal.jpg - imagem empurrada mais para baixo (center 80%) */
     .hero {
       height:70vh;
       display:flex;
@@ -28,8 +28,8 @@
       background:
         linear-gradient(rgba(13,27,42,0.6), rgba(13,27,42,0.6)),
         url('tribunal.jpg') no-repeat center/cover;
-      /* ajustar posição vertical da imagem: center 60% empurra o ponto focal para baixo */
-      background-position: center 60%;
+      /* Ajuste vertical aumentado: agora center 80% */
+      background-position: center 80%;
       padding:0 20px;
     }
 
@@ -54,8 +54,8 @@
       .hero h2{ font-size:2.2rem; }
       .hero p{ font-size:1rem; }
       nav a{ margin-left:15px; }
-      /* em telas pequenas, ajustar um pouco o posicionamento vertical para garantir boa visualização */
-      .hero { background-position: center 50%; }
+      /* mobile: manter imagem mais baixa, mas um pouco menos que desktop */
+      .hero { background-position: center 75%; }
     }
   </style>
 </head>
